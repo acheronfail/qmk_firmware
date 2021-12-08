@@ -7,12 +7,14 @@ BOOTLOADER = atmel-dfu
 # Build Options
 #   change yes to no to disable
 #
+KEY_OVERRIDE_ENABLE = yes   # Enable key overrides
 BOOTMAGIC_ENABLE = yes      # Enable Bootmagic Lite
-MOUSEKEY_ENABLE = yes       # Mouse keys
-MOUSE_SHARED_EP = yes       # Combine mouse keys into single endpoint
+MOUSEKEY_ENABLE = no        # Mouse keys
+MOUSE_SHARED_EP = no        # Combine mouse keys into single endpoint
 EXTRAKEY_ENABLE = yes       # Audio control and System control
 CONSOLE_ENABLE = no         # Console for debug
 COMMAND_ENABLE = no         # Commands for debug and configuration
+TAP_DANCE_ENABLE = yes      # Enables tap dance
 # if this doesn't work, see here: https://github.com/tmk/tmk_keyboard/wiki/FAQ#nkro-doesnt-work
 NKRO_ENABLE = yes           # Enable N-Key Rollover
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
@@ -21,3 +23,5 @@ AUDIO_ENABLE = no           # Audio output
 DIP_SWITCH_ENABLE = yes
 RGB_MATRIX_ENABLE = yes
 RGB_MATRIX_DRIVER = IS31FL3733
+LTO_ENABLE = yes
+
