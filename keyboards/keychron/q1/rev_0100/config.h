@@ -20,6 +20,7 @@
 /* USB Device descriptor parameter */
 #define PRODUCT_ID      0x0100
 #define DEVICE_VER      0x0100
+#define BUILD_ID ((uint32_t)0x00DBCD2D)
 
 /* key matrix pins */
 #define MATRIX_ROW_PINS { D3, D2, B3, B2, B1, B0 }
